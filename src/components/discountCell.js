@@ -8,12 +8,14 @@ export default function DiscountCell(cellData) {
   return (
     <Bullet
       showTarget={false}
-      showZeroLevel={true}
+      showZeroLevel={false}
       value={cellData.value * 100}
       startScaleValue={0}
       endScaleValue={100}
-    >
-      <Size width={150} height={35} />
+      color="#3467eb"
+   
+ >
+      <Size width={150} height={15} />
       <Margin top={5} bottom={0} left={5} />
       <Tooltip
         enabled={true}
